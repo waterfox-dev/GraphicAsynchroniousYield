@@ -7,7 +7,7 @@ import java.util.Map;
 
 public abstract class Entity
 {
-    public Map<String, Object> properties = new HashMap<String, Object>();
+    public Map<String, Object> properties;
     public Pos pos;
 
     private final String id;

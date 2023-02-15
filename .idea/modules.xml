@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/GraphicAsynchroniousYield.iml" filepath="$PROJECT_DIR$/GraphicAsynchroniousYield.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GraphicAsynchronousYield.iml" filepath="$PROJECT_DIR$/GraphicAsynchronousYield.iml" />
     </modules>
   </component>
 </project>

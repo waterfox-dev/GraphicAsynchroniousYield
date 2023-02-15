@@ -1,0 +1,13 @@
+{
+  "cellTypeDefinitions" :{
+    "0" : "GROUND",
+    "1" : "WATER",
+    "2" : "DOOR",
+    "3" : "WALL"
+  },
+  "cellArray" : [
+    [0, 0, 0],
+    [0, 2, 0],
+    [0, 0, 0]
+  ]
+}

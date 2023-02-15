@@ -21,10 +21,10 @@ public class MovingEntity extends Entity
     {
         switch(dir)
         {
-            case NORTH: this.pos.y -= range;
-            case EAST: this.pos.x += range;
-            case SOUTH: this.pos.y += range;
-            case WEST: this.pos.x -= range;
+            case NORTH: this.pos.x -= range;
+            case EAST: this.pos.y += range;
+            case SOUTH: this.pos.x += range;
+            case WEST: this.pos.y -= range;
         }
 
         return this.pos;

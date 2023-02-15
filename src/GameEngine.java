@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 public class GameEngine{
 
@@ -33,5 +34,17 @@ public class GameEngine{
         return entityList;
     }
 
-
+    public void render() {
+        for(ArrayList<Entity> a : entityList.values())
+        {
+            for(Entity e : a)
+            {
+                if(Objects.equals(e.getId(), "player")){
+                    this.map.getCell(e.pos).properties.put("player", true);
+                }else{
+                    this.map.getCell(e.pos).properties.put("player", false);
+                }
+            }
+        }
+    }
 }

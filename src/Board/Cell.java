@@ -23,10 +23,16 @@ public class Cell
     @Override
     public String toString()
     {
+        if(this.properties.containsKey("player") && (boolean) this.properties.get("player"))
+        {
+            System.out.println("test");
+            return ConsoleColor.ANSI_CYAN + "+" + ConsoleColor.ANSI_RESET;
+        }
         switch(this.type)
         {
-            case GROUND: return ConsoleColor.ANSI_GREEN + "G" + ConsoleColor.ANSI_RESET;
-            case DOOR: return ConsoleColor.ANSI_PURPLE + "D" + ConsoleColor.ANSI_RESET;
+            case GROUND: return ConsoleColor.ANSI_GREEN + "■" + ConsoleColor.ANSI_RESET;
+            case WALL: return ConsoleColor.ANSI_BLACK + "≡" + ConsoleColor.ANSI_RESET;
+            case DOOR: return ConsoleColor.ANSI_RED + "x" + ConsoleColor.ANSI_RESET;
         }
 
         return "V";

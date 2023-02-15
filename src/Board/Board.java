@@ -81,6 +81,11 @@ public class Board
         return board;
     }
 
+    public Cell getCell(Pos p)
+    {
+        return this.board.get(p.x).get(p.y);
+    }
+
     public void setCell(Pos p, Cell c){
         this.board.get(p.x).set(p.y, c);
     }

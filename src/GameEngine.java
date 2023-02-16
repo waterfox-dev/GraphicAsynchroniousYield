@@ -39,10 +39,9 @@ public class GameEngine{
         {
             for(Entity e : a)
             {
+                this.map.getCell(e.pos).properties.put("player", false);
                 if(Objects.equals(e.getId(), "player")){
                     this.map.getCell(e.pos).properties.put("player", true);
-                }else{
-                    this.map.getCell(e.pos).properties.put("player", false);
                 }
             }
         }

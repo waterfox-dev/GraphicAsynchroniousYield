@@ -17,16 +17,13 @@ public class MovingEntity extends Entity
         super(new HashMap<>(), id, pos);
     }
 
-    public Pos Move(Direction dir, int range)
+    public void Move(Direction dir, int range)
     {
-        switch(dir)
-        {
-            case NORTH: this.pos.x -= range;
-            case EAST: this.pos.y += range;
-            case SOUTH: this.pos.x += range;
-            case WEST: this.pos.y -= range;
+        switch (dir) {
+            case NORTH -> this.pos.x -= range;
+            case EAST -> this.pos.y += range;
+            case SOUTH -> this.pos.x += range;
+            case WEST -> this.pos.y -= range;
         }
-
-        return this.pos;
     }
 }

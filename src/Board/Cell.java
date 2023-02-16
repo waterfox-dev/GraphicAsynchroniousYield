@@ -25,7 +25,6 @@ public class Cell
     {
         if(this.properties.containsKey("player") && (boolean) this.properties.get("player"))
         {
-            System.out.println("test");
             return ConsoleColor.ANSI_CYAN + "+" + ConsoleColor.ANSI_RESET;
         }
         switch(this.type)

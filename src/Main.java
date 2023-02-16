@@ -18,6 +18,5 @@ public class Main {
         player.Move(Direction.SOUTH, 1);
         game.render();
         System.out.println(game.map);
-
     }
 }
